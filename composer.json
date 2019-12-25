@@ -1,0 +1,36 @@
+{
+    "name": "fishpond-services/:package_name",
+    "description": ":package_description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": ":author_name",
+            "email": ":author_email",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.2"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "FishpondServices\\:service_namespace\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FishpondServices\\:service_namespace\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "test:coverage": "phpunit --coverage-text --coverage-clover=coverage.clover"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
