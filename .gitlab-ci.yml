@@ -1,0 +1,7 @@
+image:
+    name: byrnedo/alpine-curl:0.1.8
+    entrypoint: ["/bin/bash"]
+
+trigger_build:
+    script:
+        - curl -X POST -F token=${TRIGGER_TOKEN} -F ref=master https://gitlab.com/api/v4/projects/16630074/trigger/pipeline
