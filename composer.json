@@ -1,14 +1,6 @@
 {
     "name": "fishpond-services/:package_name",
-    "description": ":package_description",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": ":author_name",
-            "email": ":author_email",
-            "role": "Developer"
-        }
-    ],
+    "description": "The service for fishpond",
     "require": {
         "php": ">=7.2"
     },
