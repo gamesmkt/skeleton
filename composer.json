@@ -1,6 +1,6 @@
 {
     "name": "fishpond-services/:package_name",
-    "description": "The service for fishpond",
+    "description": "The service for Fishpond",
     "require": {
         "php": ">=7.2"
     },
