@@ -4,3 +4,7 @@ composer.phar
 composer.lock
 .phpunit.result.cache
 /logs
+.idea
+.idea
+.phpstorm.meta.php
+.DS_Store
