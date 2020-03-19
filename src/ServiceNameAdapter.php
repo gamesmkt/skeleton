@@ -4,11 +4,19 @@ namespace FishpondServices\:service_namespace;
 
 class :service_nameAdapter
 {
+
+    use CheckSupportedGameTypesTrait;
+
+    const SUPPORTED_GAME_TYPES = [
+
+        ];
     /**
      * @inheritdoc
      */
     public function getGameList(TypeInterface $type = null)
     {
+        $this->checkSupportedGameTypes(self::SUPPORTED_GAME_TYPES,$type);
+
         //
     }
 

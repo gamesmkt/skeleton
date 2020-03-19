@@ -74,7 +74,7 @@ class :service_nameBetRecordMethod extends AbstractBetRecordMethod
 
     public function getDisplayData($betRecord): array
     {
-        $displayData = new DisplayData($betRecord);
+        $displayData = new DisplayData($betRecord,$this->config->get('language'));
 
         return $displayData->toArray();
     }
